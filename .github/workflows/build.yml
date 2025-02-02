@@ -1,5 +1,7 @@
 name: Build
-on: push
+on: 
+  push:  # 保留原有的 push 触发
+  workflow_dispatch:  # 添加手动触发选项
 permissions: write-all
 
 jobs:
